@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { CardSection } from '@/components/CardSection';
-import { useTheme } from '@emotion/react';
 
 const useStyles = makeStyles({
   heroBanner: {
