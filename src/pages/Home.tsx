@@ -13,9 +13,13 @@ const useStyles = makeStyles({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: '#fff',
-    height: '80vh',
+    height: '65vh',
     textAlign: 'center',
     padding: '0 20px',
+    maxWidth: '1400px',
+    marginInline: 'auto',
+    marginTop: '100px',
+    borderRadius: '15px',
   },
   heroContent: {
     maxWidth: '700px',
@@ -36,21 +40,16 @@ const useStyles = makeStyles({
 
 export const Home: React.FC = () => {
   const classes = useStyles();
-  const theme = useTheme();
 
   return (
-    <div
-      style={{
-        backgroundColor: theme.palette.background.default,
-      }}
-    >
+    <div>
       {/* Hero Banner */}
       <Box className={classes.heroBanner}>
         <Box className={classes.heroContent}>
           <Typography variant='h2' gutterBottom>
             ArenaStrats
           </Typography>
-          <Typography variant='h5'>
+          <Typography variant='h5' paragraph>
             Master your arena strategy with real-time insights on positioning,
             kill windows, and cooldown management. Become the top contender in
             every match.

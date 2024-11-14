@@ -30,7 +30,7 @@
       "@/assets/*": ["src/assets/*"],
       "@/constants/*": ["src/constants/*"],
       "@/hooks/*": ["src/hooks/*"],
-      "@/app": ["src/app"]
+      "@/app": ["src/App"]
     }
   },
   "include": ["src"],

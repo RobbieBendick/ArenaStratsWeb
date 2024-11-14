@@ -6,6 +6,7 @@ import {
   PaletteMode,
   createTheme,
   ThemeProvider,
+  CssBaseline,
 } from '@mui/material';
 import React from 'react';
 import { grey } from '@mui/material/colors';
@@ -84,6 +85,7 @@ function App() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <BrowserRouter>
           <BindRoutes />
         </BrowserRouter>

@@ -46,13 +46,11 @@ const cardData: CardDataProps[] = [
 ];
 
 export const CardSection: React.FC = () => {
-  const StyledSection = styled('section')`
-    @media (max-width: 1000px) {
-      margin-top: 10rem;
-    }
-  `;
-
   const theme = useTheme();
+
+  const StyledSection = styled('section')`
+    margin-top: 8rem;
+  `;
 
   const StyledHeader = styled(Typography)`
     font-weight: bold;
